@@ -2,7 +2,8 @@
   "name": "apiassessment",
   "version": "1.0.0",
   "engines":{
-    "node":"6.10.1" 
+    "node":"6.10.1",
+    "npm" :"3.10.10"
     },
   "description": "",
   "private": true,
