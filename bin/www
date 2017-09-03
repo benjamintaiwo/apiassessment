@@ -30,7 +30,9 @@ mongoose.connect('mongodb://benjamintaiwo:assessmentapi@ds121534.mlab.com:21534/
   if(err) {
     throw new Error(err);
   } else {
-    server.listen(port);
+    server.listen(port, function(){
+      console.log("API SERVER NOW RUNNING")
+    } );
    
   }
 });

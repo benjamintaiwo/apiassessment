@@ -8,7 +8,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "web": "node ./bin/www npm start"
+    "start": "node ./bin/www"
   },
   "babel": {
     "presets": [
