@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
-var bcrypt = require('bcrypt');
-var Schema = mongoose.Schema;
+var bcrypt = require('bcryptjs');
 
 // Schema defines how the Account data will be stored in MongoDB
 var AccountSchema = new mongoose.Schema({  

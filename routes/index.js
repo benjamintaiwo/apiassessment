@@ -1,11 +1,11 @@
 const express = require('express');
 //const passport = require('passport');
-const Account = require('../models/account');
+const Account = require('../models/accounts');
 const router = express.Router();
 
-require('../config/passport')(passport);
+const passport = require('../config/passport');
 
-app.get('/', function(req, res) {  
+router.get('/', function(req, res) {  
   res.send('You need to Login!' + 
   'Register first if you do not have an Account.Register at /register and login at /login.'+
   'Also, You can perform CRUD operations on a /users schema');
