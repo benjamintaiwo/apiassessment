@@ -2,7 +2,8 @@ const express = require('express');
 //const passport = require('passport');
 const Account = require('../models/accounts');
 const router = express.Router();
-
+const jwt = require('jsonwebtoken');
+const config = require('../config/main');
 const passport = require('../config/passport');
 
 router.get('/', function(req, res) {  
@@ -14,7 +15,8 @@ router.get('/', function(req, res) {
 
 router.post('/register', function(req, res) {  
   if(!req.body.email || !req.body.password) {
-    res.json({ success: false, message: 'Please enter email and password.' });
+    //res.json({ success: false, message: 'Please enter email and password.' });
+    res.send(req.body.email);
   } else {
     var newAccount = new Account({
       email: req.body.email,
