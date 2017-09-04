@@ -6,9 +6,10 @@ const router = express.Router();
 const passport = require('../config/passport');
 
 router.get('/', function(req, res) {  
-  res.send('You need to Login!' + 
-  'Register first if you do not have an Account.Register at /register and login at /login.'+
-  'Also, You can perform CRUD operations on a /users schema');
+  res.send(`You need to Login! \n\n` +
+  `Register first if you do not have an Account.\n` +
+  `Register at https://apiassessment.herokuapp.com//register and login at https://apiassessment.herokuapp.com//login.\n\n` +
+  `Also, You can perform CRUD operations on a https://apiassessment.herokuapp.com//users schema`);
 });
 
 router.post('/register', function(req, res) {  
