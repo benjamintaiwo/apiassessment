@@ -1,10 +1,10 @@
 {
   "name": "apiassessment",
   "version": "1.0.0",
-  "engines":{
-    "node":"6.10.1",
-    "npm" :"3.10.10"
-    },
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
+  },
   "description": "",
   "private": true,
   "scripts": {
@@ -34,12 +34,14 @@
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "express-session": "^1.10.1",
+    "jsonwebtoken": "^7.4.3",
     "log4js": "^0.6.29",
     "mocha": "^2.3.4",
     "mongodb": "^2.2.31",
     "mongoose": "^4.10.8",
     "morgan": "~1.8.1",
     "passport": "^0.2.1",
+    "passport-jwt": "^3.0.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^1.0.0",
     "pluralize": "^1.2.1",
@@ -47,16 +49,18 @@
     "slug": "^0.9.1"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "connect-flash": "^0.1.1",
     "faker": "^3.0.1",
     "gulp": "^3.9.0",
     "gulp-jshint": "^2.0.0",
     "istanbul": "^0.4.1",
     "jshint": "^2.8.0",
-    "connect-flash": "^0.1.1",
+    "mocha": "^2.3.4",
     "passport": "^0.2.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^1.0.0",
-    "mocha": "^2.3.4",
+    "request": "^2.81.0",
     "should": "^8.0.2"
   }
 }
